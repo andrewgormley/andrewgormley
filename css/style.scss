@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+
+$primary-font: 'Raleway', sans-serif;
+$title-font: 'Playfair Display', serif;
+$primary-copy: 0.875em;
+$secondary-copy: 0.750em;
+$link-gradient: -webkit-linear-gradient(0deg, #3a7bd5, #00d2ff);
+
+body {
+  font-family: $primary-font;
+}
+
+.columns {
+  padding: 0;
+}
+
+a {
+  transition: 150ms;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.copy-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 100;
+
+  p {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+
+    span {
+      font-size: 1.5em;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .button {
+    margin: 0 10px;
+  }
+
+}
+
+.profile-image {
+  max-width: 75px;
+  border-radius: 37.5px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+p {
+  font-size: $primary-copy;
+  line-height: 1.8em;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+
+
+  a {
+    background: $link-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+}
+
+.card-row {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card-container {
+  padding: 0 20px;
+  float: left;
+
+  @media screen and (max-width: 64em) {
+    margin-bottom: 25px;
+  }
+
+}
+
+.card-container:last-child {
+  @media screen and (max-width: 39.9375em) {
+    margin-bottom: 0px;
+  }
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0px 7px 53.58px 3.42px rgba(0, 0, 0, 0.08);
+  transition: 300ms;
+  opacity: 0;
+  max-width: 315px;
+  margin: auto;
+}
+
+.card:hover {
+  box-shadow: 0px 7px 53.58px 5px rgba(0, 0, 0, 0.15);
+}
+
+.cover {
+  height: 175px;
+  background-color: #F4F4F4;
+  overflow: hidden;
+
+  img {
+    max-height: 100%;
+
+    @media screen and (max-width: 39.9375em) {
+      max-height: none;
+      max-width: 100%;
+    }
+
+  }
+
+}
+
+.card-copy {
+  padding: 20px;
+
+  p {
+    font-size: $secondary-copy;
+    color: #747474;
+    margin: 0.5em 0 1.5em;
+    text-align: justify;
+    line-height: 1.2rem;
+  }
+
+}
+
+.card-title {
+  font-family: $title-font;
+  font-size: $primary-copy;
+  font-size: 1.3em;
+  font-weight: 100;
+  line-height: 1.8rem;
+}
+
+.button {
+  text-transform: uppercase;
+  font-size: $secondary-copy;
+  padding: 12px 24px;
+  border-radius: 2.5px;
+  background: $link-gradient;
+  color: white;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  border: none;
+
+  span {
+    font-size: 2em;
+    position: absolute;
+    top: 4px;
+    left: 85px;
+  }
+
+}
+
+.button-spacing {
+  padding: 12px 53px 12px 24px;
+}
+
+.footer {
+  font-size: $secondary-copy;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  margin: 10px;
+  line-height: 2em;
+  a {
+    text-decoration: none;
+    color: #747474;
+  }
+}
+
+.article-image {
+  margin-bottom: 90px;
+
+  img {
+    width: 100%;
+  }
+
+}
+
+.article-copy {
+  text-align: justify;
+  margin-bottom: 100px;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.section-title {
+  font-family: $title-font;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.aspect-ratio {
+  position: relative;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 51%;
+  margin-bottom: 90px;
+
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0;
+  }
+
+}
+
+.foot {
+  margin-bottom: 0;
+}
+
+.clear {
+  clear:both;
+}
+
+.caption {
+  font-size: $secondary-copy;
+  color: #747474;
+  text-align: center;
+  margin: 15px;
+}
+
+form {
+  max-width: 600px;
+  margin: 50px auto 0;
+  padding: 0 10px;
+
+  .button {
+    width: 100%;
+  }
+
+}
+
+input {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  font-size: $primary-copy;
+}
+
+textarea {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    font-size: $primary-copy;
+}
+
+.green {
+  max-width: 600px;
+  margin: 50px auto 0;
+  text-align: center;
+  font-size: $primary-copy;
+
+  p {
+    margin: 0;
+  }
+
+}
