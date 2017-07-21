@@ -10,7 +10,7 @@
         and more. Always searching for exciting new projects to get involved with.
       </p>
       <p>
-        <strong>What I'm up to:</strong> Currently learning Swift for fun <span>&#129299;</span>
+        <strong>What I'm up to:</strong> Currently building <a href="https://swtechjobs.com" target="_blank">South West Tech Jobs</a> on the side for fun <span>&#128640;</span></span>
       </p>
     </div>
 
